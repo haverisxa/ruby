@@ -3,9 +3,9 @@ Rubyで作成したスクリプト集
 
 ## 目次
 
-[movie_on_playing.rb](##movie_on_playing.rb)
+[movie_on_playing.rb](#movie_on_playingrb)
 
-[onsen_list.rb](##onsen_list.rb)
+[onsen_list.rb](#onsen_listrb)
 
 ## movie_on_playing.rb
 個々に撮影した演奏動画を結合．
