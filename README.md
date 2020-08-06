@@ -44,5 +44,3 @@ Codeの説明：
 　下記のコマンドにて，ffmpegでダウンロード．
 
 　　ffmpeg -y -i "https://onsen......./playlist.m3u8" -vcodec copy -acodec copy -bsf:a aac_adtstoasc "output.mp4"
-
-## test
