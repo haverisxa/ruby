@@ -21,26 +21,14 @@ Codeの説明：
 ## onsen_list.rb
 インターネットラジオサイト 音泉 https://www.onsen.ag/ の，番組のタイトルとURL一覧を取得．2020年8月から変更された仕様に対応．
 
-実行方法1：　ruby onsen_list.rb
+2020/08/17: GUI形式で番組名の一覧を表示し，番組名を選択→｢選択した番組をダウンロード｣にて自動でダウンロードする仕様に変更．一部，番組名の更新日の年の表記が正しくない場合あり．
 
-　→　今日(実行した日に)更新された番組一覧を表示
+事前準備：
 
-実行方法1：　ruby onsen_list.rb 8/3
+　ファイル内の ffmpeg="" の行の，""にffmpegのファイルパスを記入して下さい．
+ 
+ ＊Windowsの場合，\は\\と2重で書く必要があります．
 
-　→　1つ目の引数の日(例では8月3日)に更新された番組一覧を表示
+実行方法：　ruby onsen_list.rb
 
-出力形式：
-
-　■ 番組名1 第n回 20xx年xx月xx日 放送
-
-　　https://onsen......./playlist.m3u8
-  
-　■ 番組名2 第n回 20xx年xx月xx日 放送
-
-　　https://onsen......./playlist.m3u8
-
-その他：
-
-　下記のコマンドにて，ffmpegでダウンロード．
-
-　　ffmpeg -y -i "https://onsen......./playlist.m3u8" -vcodec copy -acodec copy -bsf:a aac_adtstoasc "output.mp4"
+　＊ダウンロードしたファイルは，スクリプトを実行した場所．
