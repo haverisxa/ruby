@@ -4,7 +4,7 @@ require 'openssl'
 require 'kconv'
 require 'tk'
 
-ffmpeg = "C:\\Programs\\ffmpeg-4.2.2-win64-static\\bin\\ffmpeg.exe"
+ffmpeg = ""
 opt = "-vcodec copy -acodec copy -bsf:a aac_adtstoasc"
 
 def rkey(s, key)
