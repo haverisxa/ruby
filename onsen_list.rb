@@ -54,7 +54,7 @@ puts "# Making GUI ..."
 
 for s in source_c.split("{")
     ss = s.tosjis
-    if(ss.include?("\display\":true,\"title\":\""))
+    if(ss.include?("\display\":true,\"show_contents_count\":null,\"title\":\""))
         title = rkey(ss, "title")
         titlef = true
     end
